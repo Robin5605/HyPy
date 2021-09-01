@@ -16,7 +16,7 @@ class FriendRequest:
         self.receiver : str = kwargs['uuidReceiver']
         self.started : datetime = datetime.fromtimestamp(kwargs['started'] / 1000)
 
-class Hypixel8:
+class Hypixel:
     def __init__(self, *, api_key : str):
         self.api_key= api_key
         self.owner = self.get_owner()
